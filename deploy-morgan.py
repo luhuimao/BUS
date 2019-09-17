@@ -306,12 +306,12 @@ parser.add_argument(
 
 argv = parser.parse_args(sys.argv[1:])
 
-#add_submodules()
+add_submodules()
 #update_submodules()
 build("1.35","erasure",release=argv.release)
 prnt_run("Update PATH")
 # execute_shell(f"source ~/.profile")
-prnt_run("Please run /usr/bin/bitconch/morgan/demo/setup.sh")
+prnt_run("Please run /bitconch/morgan/demo/setup.sh")
 
 # Setup the boot leader with stake of 500K dif
 if click.confirm('Do you want to run setup to create genesis file and id files?', default=True):
